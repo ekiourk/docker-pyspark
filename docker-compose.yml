@@ -1,0 +1,10 @@
+pyspark:
+  build: .
+  dockerfile: ./Dockerfile
+  hostname: pyspark
+  ports:
+    - "8888:8888"
+  volumes:
+    - .:/spark/playbooks/
+  environment:
+    IPYTHON_OPTS: notebook --ip='*' --no-browser
