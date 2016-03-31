@@ -5,6 +5,6 @@ pyspark:
   ports:
     - "8888:8888"
   volumes:
-    - .:/spark/playbooks/
+    - ./notebooks:/spark/notebooks
   environment:
     IPYTHON_OPTS: notebook --ip='*' --no-browser
